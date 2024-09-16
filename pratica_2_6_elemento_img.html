@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática: O Elemento &lt;img&gt;</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .image-section {
+            margin-bottom: 20px;
+        }
+        .caption {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exemplo de Uso do Elemento &lt;img&gt;</h1>
+        </header>
+
+        <section class="image-section">
+            <h2>Imagem com Texto Alternativo</h2>
+            <p>O atributo <code>alt</code> fornece uma descrição da imagem quando ela não pode ser carregada. Ele também é importante para acessibilidade.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Exemplo de uma imagem com texto alternativo" />
+        </section>
+
+        <section class="image-section">
+            <h2>Imagem com Título</h2>
+            <p>O atributo <code>title</code> exibe um texto adicional quando o usuário passa o mouse sobre a imagem.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Imagem com título" title="Este é um título para a imagem" />
+        </section>
+
+        <section class="image-section">
+            <h2>Imagem com Legenda</h2>
+            <p>Utilizando o elemento <code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code> para adicionar uma legenda à imagem.</p>
+            <figure>
+                <img src="https://via.placeholder.com/800x400" alt="Imagem com legenda" />
+                <figcaption class="caption">Legenda: Esta é uma imagem com uma legenda associada.</figcaption>
+            </figure>
+        </section>
+    </div>
+</body>
+</html>
